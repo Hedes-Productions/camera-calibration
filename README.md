@@ -13,6 +13,16 @@ This project provides a step-by-step guide to calibrate a camera using DroidCam,
 
 ---
 
+## Project Files and Their Usages
+
+- **cam_index_check.py** – Can be used to test if the camera setup is working properly.
+- **camera_check_with_apriltags.py** – Can test AprilTag detection with the `.npz` file containing the required camera calibration parameters.
+- **valid_frames_selector.py** – Can be used to select valid frames after getting the camera frames folder created by `main.py`.
+- **main.py** – Used to record and save the appropriate camera frames via Charuco Board calibration.
+- **npz_file_creator.py** – Generate a npz file by given camera parameters.
+
+---
+
 ## Setup and Calibration Steps
 
 ### 1. Open DroidCam Client
@@ -33,7 +43,7 @@ git clone <repository-url>
 - **Note:** Ensure parameters such as resolution, number of columns and rows, and time intervals in the code are correct.
 
 ### 5. Filter Camera Frames
-- Run `camera_matrix_cal.py`.
+- Run `valid_frames_selector.py`.
 - This will filter out low-quality frames and save the selected frames in a new folder.
 - **Note:** Check parameters in the script before running.
 
@@ -63,3 +73,6 @@ git clone <repository-url>
 ## Notes
 - Ensure all parameters (resolution, board size, etc.) are correctly set in the scripts.
 - Calibration might need several iterations to achieve an acceptable pixel error.
+
+
+
