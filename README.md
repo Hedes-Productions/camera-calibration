@@ -31,7 +31,7 @@ This project provides a step-by-step guide to calibrate a camera using DroidCam,
 
 ### 2. Download or Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/Hedes-Productions/camera-calibration
 ```
 
 ### 3. Generate a Charuco Board
@@ -74,5 +74,10 @@ git clone <repository-url>
 - Ensure all parameters (resolution, board size, etc.) are correctly set in the scripts.
 - Calibration might need several iterations to achieve an acceptable pixel error.
 
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
